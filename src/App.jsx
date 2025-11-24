@@ -38,11 +38,11 @@ function App() {
       
         <Routes>
           <Route path='/Signup' element={<Signup/>}/>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/home' element={<Home/>}/>
           <Route path='/Addproducts' element={<Addproducts/>} />
           <Route path='/Productdetail' element={<Productdetail/>} />
           <Route path='/Dashboard' element={<Dashboard/>} />
-          <Route path='/Signin' element={<Signin/>} />
+          <Route path='/' element={<Signin/>} />
           <Route path='/Wishlist' element={<Wishlist/>} />
           <Route path='/Wishlistitem' element={<Wishlistitem/>} />
           <Route path='/CartSlider' element={<CartSlider/>} />
