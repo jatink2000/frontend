@@ -18,7 +18,7 @@ function Wishlist() {
   },[])
 
   let ourwishlist=()=>{
-    axios.get("https://freshcartproject-backend.vercel.app/wishlist").then((res)=>{
+    axios.get("https://backend-two-delta-25.vercel.app/wishlist").then((res)=>{
       if(res.data.status){
         setwishlist(res.data.wishlist)
       }
@@ -29,7 +29,7 @@ function Wishlist() {
 
   // removeitem 
   let removeitem=(item)=>{
-    axios.post("https://freshcartproject-backend.vercel.app/removewishlistitem",{item})
+    axios.post("https://backend-two-delta-25.vercel.app/removewishlistitem",{item})
 
     window.location.reload()
   }

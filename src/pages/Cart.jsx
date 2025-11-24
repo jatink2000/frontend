@@ -14,7 +14,7 @@ export default function CartSlider() {
   }, [])
 
   let cartdata = () => {
-    axios.get("https://freshcartproject-backend.vercel.app/cartlistitem").then((res) => {
+    axios.get("https://backend-two-delta-25.vercel.app/cartlistitem").then((res) => {
       if (res.data.status) {
         setCartItems(res.data.cartitemlist)
       }
@@ -28,14 +28,14 @@ export default function CartSlider() {
 
     let increment = (cartid) => {
       setquantity(++quantity)
-      axios.post("https://freshcartproject-backend.vercel.app/updatecartitem", { quantity, cartid })
+      axios.post("https://backend-two-delta-25.vercel.app/updatecartitem", { quantity, cartid })
       window.location.reload()
     }
 
     let decrement = (cartid) => {
       if (quantity > 1) {
         setquantity(--quantity)
-        axios.post("https://freshcartproject-backend.vercel.app/updatecartitem", { quantity, cartid })
+        axios.post("https://backend-two-delta-25.vercel.app/updatecartitem", { quantity, cartid })
         window.location.reload()
       }
     }

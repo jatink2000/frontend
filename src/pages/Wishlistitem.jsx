@@ -15,7 +15,7 @@ import React, { useState } from 'react'
 
 
     let additem=()=>{
-        axios.post("https://freshcartproject-backend.vercel.app/wishlistitem",{wishlist})
+        axios.post("https://backend-two-delta-25.vercel.app/wishlistitem",{wishlist})
     }
 
   return (

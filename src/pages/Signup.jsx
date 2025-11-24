@@ -21,7 +21,7 @@ function Signup() {
     }
 
     try {
-      const res = await axios.post("https://freshcartproject-backend.vercel.app/signup", signup);
+      const res = await axios.post("https://backend-two-delta-25.vercel.app/signup", signup);
 
       if (res.data.status) { // ✅ updated key name
         alert("Signup successful!");

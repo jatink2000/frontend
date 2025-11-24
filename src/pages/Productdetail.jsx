@@ -105,12 +105,12 @@ export default function Productdetail() {
 
 
   let wishlist=(wishlistitem)=>{
-    axios.post("https://freshcartproject-backend.vercel.app/wishlistitem",{wishlistitem})
+    axios.post("https://backend-two-delta-25.vercel.app/wishlistitem",{wishlistitem})
   }
 
 
   let addtocart=(cartitem)=>{
-    axios.post("https://freshcartproject-backend.vercel.app/cart",{cartitem})
+    axios.post("https://backend-two-delta-25.vercel.app/cart",{cartitem})
   }
 
   return (
